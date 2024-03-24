@@ -50,7 +50,7 @@ global.location = process.env.GL_INFO || "Pakistan, Lahore, Sabzazar" //ur locat
 
 //new
 //________________________________________________________________________________________________________
-global.botname = process.env.BOT_NAME || 'Kiyotaka-MD' //ur bot name
+global.botname = process.env.BOT_NAME || 'Kiyotaka' //ur bot name
 //________________________________________________________________________________________________________
 global.ownernumber = process.env.SUDO || '4915212908434' //ur owner number
 //________________________________________________________________________________________________________
