@@ -758,8 +758,8 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         global.db.data.chats[from] = {
           badword: false,
           antiforeignnum: false,
-          antibot: false,
-          antiviewonce: false,
+          antibot: true,
+          antiviewonce: true,
           antivirtex: true,
           antimedia: false,
           antiimage: false,
@@ -806,18 +806,18 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         global.db.data.settings[botNumber] = {
           totalhit: 0,
           totalError: 0,
-          online: false,
+          online: true,
           autosticker: false,
           autobio: false,
-          autoread: false,
+          autoread: true,
           autoblocknum: false,
           onlyindia: false,
           onlyindo: false,
           onlygrub: false,
           onlypc: false,
-          autorecordtype: false,
-          autorecord: false,
-          autotype: false,
+          autorecordtype: true,
+          autorecord: true,
+          autotype: true,
           watermark: {
             packname: global.packname,
             author: global.author,
@@ -3485,17 +3485,7 @@ click https://wa.me/${botNumber.split`@`[0]}`,
           );
         }
         break;
-      case "add":
-        if (!m.isGroup) return XeonStickGroup();
-        if (!XeonTheCreator) return XliconStickOwner();
-        if (!isBotAdmins) return XliconStickBotAdmin();
-        let blockwwww = m.quoted
-          ? m.quoted.sender
-          : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
-        await XliconBotInc.groupParticipantsUpdate(m.chat, [blockwwww], "add");
-        replygcXlicon(mess.done);
-        break;
-      case "promote":
+        case "promote":
         if (!m.isGroup) return XeonStickGroup();
         if (!isAdmins && !isGroupOwner && !XeonTheCreator)
           return XliconStickAdmin();
