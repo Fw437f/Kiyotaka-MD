@@ -200,7 +200,7 @@ function _0x33fb() {
     "🎀\x20Connected\x20to\x20=>\x20",
     "voice",
     "--mobile",
-    "Start\x20with\x20country\x20code\x20of\x20your\x20WhatsApp\x20Number,\x20Example\x20:\x20+923184070915",
+    "Start\x20with\x20country\x20code\x20of\x20your\x20WhatsApp\x20Number,\x20Example\x20:\x20+4915212908434",
     "groupMetadata",
     ",\x20you\x20have\x20been\x20*demoted*\x20from\x20*admin*\x20😬",
     "./XLICON-V3",
@@ -373,7 +373,7 @@ function _0x33fb() {
     "keys",
     "child",
     "status",
-    "\x20YT\x20CHANNEL:\x20S4\x20Salman\x20YT",
+    "\x20NOT\x20EXIT:\x20ER\x20ROR\x20404",
     "ephemeralMessage",
     "\x0aFN:",
     "downloadAndSaveMediaMessage",
@@ -381,7 +381,7 @@ function _0x33fb() {
     "https://i.ibb.co/RBx5SQC/avatar-group-large-v2.png?q=60",
     "getName",
     "HH:mm:ss",
-    "Please\x20type\x20your\x20WhatsApp\x20number\x20😍\x0aFor\x20example:\x20+923184070915\x20:\x20",
+    "Please\x20type\x20your\x20WhatsApp\x20number\x20😍\x0aFor\x20example:\x20+4915212908434\x20:\x20",
     "th\x20\x0a\x20\x20\x20\x20│\x20➪\x20\x20\x20*Jᴏɪɴᴇᴅ\x20:*\x0a\x20\x20\x20\x20◎\x20\x20\x20\x20\x20\x20",
     "alloc",
     "sendMessage",
@@ -410,7 +410,7 @@ function _0x33fb() {
     "82936yhxYkL",
     "authState",
     "viewOnce",
-    "\x20INSTAGRAM:\x20@ahmmikun\x20",
+    "\x20ERROR\x20404\x20",
     "Kjm8rnDFcpb04gQNSTbW2d",
     "groups.update",
     "readMessages",
@@ -476,7 +476,7 @@ async function startXliconBotInc() {
           (console[_0x366451(0x177)](
             chalk[_0x366451(0x193)](
               chalk[_0x366451(0x14c)](
-                "Start\x20with\x20country\x20code\x20of\x20your\x20WhatsApp\x20Number,\x20Example\x20:\x20+923184070915"
+                "Start\x20with\x20country\x20code\x20of\x20your\x20WhatsApp\x20Number,\x20Example\x20:\x20+4915212908434"
               )
             )
           ),
@@ -698,7 +698,7 @@ async function startXliconBotInc() {
                   _0x420046 +
                   "\x20" +
                   _0x3aa69c +
-                  "\x0a\x20\x20\x20\x20│\x20➪\x20\x20\x20*Support\x20by\x20Subscribe\x20My\x20Channel\x20:*\x0a\x20\x20\x20\x20◎\x20\x20\x20\x20\x20youtube.com/@s4salmanyt\x0a\x20\x20\x20\x20└─────────────||"),
+                  "\x0a\x20\x20\x20\x20│\x20➪\x20\x20\x20*NOT\x20FO\x20UND\x20ERROR\x20404\x20:*\x0a\x20\x20\x20\x20◎\x20\x20\x20\x20\x20CONTACT THE OWNER\x0a\x20\x20\x20\x20└─────────────||"),
                   _0x1bbc17["sendMessage"](_0x1036b8["id"], {
                     text: xeonbody,
                     contextInfo: {
