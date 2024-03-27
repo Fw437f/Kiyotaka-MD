@@ -72,7 +72,7 @@ global.author = process.env.AUTHER_NAME || "ᗰᗩᗪE ᗷY ✨️𝓜𝓪𝓰�
 //________________________________________________________________________________________________________
 global.creator = process.env.GL_DEVS || "4915212908434@s.whatsapp.net"
 //________________________________________________________________________________________________________
-global.xprefix = process.env.PREFIX || '.'
+global.xprefix = process.env.PREFIX || '!'
 //________________________________________________________________________________________________________
 global.premium = process.env.GL_VIP || ["4915212908434"] // Premium User
 //________________________________________________________________________________________________________
@@ -81,15 +81,15 @@ global.hituet = 0
 
 //bot sett
 //________________________________________________________________________________________________________
-global.typemenu = process.env.MENU_DESIGN || 'v4' // menu type 'v1' => 'v8'
+global.typemenu = process.env.MENU_DESIGN || 'v3' // menu type 'v1' => 'v8'
 //________________________________________________________________________________________________________
-global.typereply = process.env.REPLY_TYPE || 'v2' // reply type 'v1' => 'v3'
+global.typereply = process.env.REPLY_TYPE || 'v3' // reply type 'v1' => 'v3'
 //________________________________________________________________________________________________________
 global.autoblocknumber = process.env.AUTO_BAN || '9' //set autoblock country code
 //________________________________________________________________________________________________________
 global.antiforeignnumber = process.env.AUTO_BLOCK || '9' //set anti foreign number country code
 //________________________________________________________________________________________________________
-global.welcome = process.env.WELCOME_MSG || true //welcome/left in groups
+global.welcome = process.env.WELCOME_MSG || false //welcome/left in groups
 //________________________________________________________________________________________________________
 global.anticall = process.env.GL_NOCALL || true //bot blocks user when called
 //________________________________________________________________________________________________________
