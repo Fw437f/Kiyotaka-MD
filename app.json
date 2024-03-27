@@ -30,7 +30,7 @@
     "PREFIX": {
       "description": "Set Your Prefix Here",
       "required": true,
-      "value": "."
+      "value": "!"
     },
     "BOT_NAME": {
       "description": "Set Your Bot Name Here",
@@ -60,7 +60,7 @@
     "MENU_DESIGN": {
       "description": "Choose Any Style v1 => v8",
       "required": false,
-      "value": "v8"
+      "value": "v3"
      },
     "AUTO_STATUS_SEEN": {
       "description": "Auto Status Seen True/False",
