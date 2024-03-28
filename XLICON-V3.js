@@ -8657,7 +8657,7 @@ Cieeee, What's Going On❤️💖👀`,
       case "animewaifu":
         {
           await XliconStickWait();
-          waifudd = await axios.get(`https://nekos.life/api/v2/img/waifu`);
+          waifudd = await axios.get(`https://api.waifu.pics/sfw/waifu`);
           await XliconBotInc.sendMessage(
             m.chat,
             { image: { url: waifudd.data.url }, caption: mess.success },
