@@ -1429,7 +1429,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
 
     if (db.data.chats[m.chat].antilinkgc) {
       if (budy.match(`chat.whatsapp.com`)) {
-        bvl = `\`\`\`「 GC Link Detected 」\`\`\`\n\n*_Admin has sent a gc link, admin is free to send any link😇_*`;
+        bvl = `\`\`\`「 GC Link Detected 」\`\`\`\n\n*_Admin has sent a gc link, admin is free to send any link❤️_*`;
         if (isAdmins) return replygcXlicon(bvl);
         if (m.key.fromMe) return replygcXlicon(bvl);
         if (XeonTheCreator) return replygcXlicon(bvl);
@@ -1455,7 +1455,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
     }
     if (db.data.chats[m.chat].antilink) {
       if (budy.match("http") && budy.match("https")) {
-        bvl = `\`\`\`「 Link Detected 」\`\`\`\n\n*_Admin has sent a link, admin is free to send any link😇_*`;
+        bvl = `\`\`\`「 Link Detected 」\`\`\`\n\n*_Admin has sent a link, admin is free to send any link❤️_*`;
         if (isAdmins) return replygcXlicon(bvl);
         if (m.key.fromMe) return replygcXlicon(bvl);
         if (XeonTheCreator) return replygcXlicon(bvl);
@@ -2291,7 +2291,7 @@ click https://wa.me/${botNumber.split`@`[0]}`,
           });
         }
         break;
-      case "join":
+      case "joingc":
         try {
           if (!XeonTheCreator) return XliconStickOwner();
           if (!text) return replygcXlicon("*_Enter Group Link!_*");
@@ -2813,6 +2813,7 @@ click https://wa.me/${botNumber.split`@`[0]}`,
         }
         break;
       case "react":
+      case "r":
         {
           if (!XeonTheCreator) return XliconStickOwner();
           reactionMessage = {
@@ -3117,21 +3118,6 @@ click https://wa.me/${botNumber.split`@`[0]}`,
             replygcXlicon(`${command} is enabled`);
           } else if (args[0] === "off") {
             db.data.chats[from].antilinkgc = false;
-            replygcXlicon(`${command} is disabled`);
-          }
-        }
-        break;
-      case "welcome":
-      case "left":
-        {
-          if (!m.isGroup) return XeonStickGroup();
-          if (!isAdmins && !XeonTheCreator) return XliconStickAdmin();
-          if (args.length < 1) return replygcXlicon("*_on/off?_*");
-          if (args[0] === "on") {
-            welcome = true;
-            replygcXlicon(`${command} is enabled`);
-          } else if (args[0] === "off") {
-            welcome = false;
             replygcXlicon(`${command} is disabled`);
           }
         }
