@@ -912,7 +912,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         "```■■■■■■□□□ 50%```",
         "```■■■■■■■■□ 80%```",
         "```■■■■■■■■■ 100%```",
-        "```C o m p l e t e...!```🐦",
+        "```C o m p l e t e...!```😴",
       ];
       let { key } = await XliconBotInc.sendMessage(from, {
         text: "ʟᴏᴀᴅɪɴɢ...",
@@ -2630,7 +2630,7 @@ click https://wa.me/${botNumber.split`@`[0]}`,
       case "out":
         if (!XeonTheCreator) return XliconStickOwner();
         if (!m.isGroup) return XeonStickGroup();
-        replygcXlicon("*_Bye Everyone 🥺_*");
+        replygcXlicon("*_Bye Everyone 😶‍🌫️_*");
         await XliconBotInc.groupLeave(m.chat);
         break;
       case "bc":
@@ -3185,10 +3185,10 @@ click https://wa.me/${botNumber.split`@`[0]}`,
             "https://chat.whatsapp.com/" +
             (await XliconBotInc.groupInviteCode(group));
           await XliconBotInc.sendMessage(text + "@s.whatsapp.net", {
-            text: `≡ *GROUP INVITATION*\n\nA user invites you to join this group \n\n${link}`,
+            text: `≡ *GROUP INVITATION*\n\nA user invites you to join this group 👻 \n\n${link}`,
             mentions: [m.sender],
           });
-          replygcXlicon(` *_An invite link is sent to the user_* `);
+          replygcXlicon(` *_An invite link is sent to the user 🫨_* `);
         }
         break;
       case "closetime":
@@ -3341,7 +3341,7 @@ click https://wa.me/${botNumber.split`@`[0]}`,
               } else {
                 text66 += `🪀 *Number:* wa.me/${
                   anu[0].jid.split("@")[0]
-                }\n 🎗️*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(
+                }\n 🤫*Bio :* ${anu1.status}\n🧐*Last update :* ${moment(
                   anu1.setAt
                 )
                   .tz("Asia/Karachi")
@@ -4648,7 +4648,7 @@ ${cpus
             { image: medi, caption: "➫ 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐁𝐲 Kiyotaka�" },
             { quoted: m }
           );
-          setTimeout(() => {
+          setTimeout(() => {0
             fs.unlinkSync(buff);
           }, 10000);
         }
@@ -4872,6 +4872,7 @@ Type *surrender* to give up and admit defeat`;
         break;
       case "rockpaperscissors":
       case "rps":
+      case "sss":
         {
           this.suit = this.suit ? this.suit : {};
           let poin = 10;
@@ -6312,9 +6313,9 @@ Updated At : ${aj.updated_at}`,
             { quoted: m }
           );
         }
-        break;
-      case "npmstalk":
-        {
+       break;
+       case "npmstalk":
+       {
           if (!q) return replygcXlicon(`Example ${prefix + command} kiyotakaapi`);
           await XliconStickWait();
           let npmstalk = require("./lib/scraper");
@@ -8940,7 +8941,7 @@ Cieeee, What's Going On❤️💖👀`,
         await XliconBotInc.sendMessage(
           m.chat,
           {
-            caption: `➫ 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐁𝐲 𝐗𝐋𝐈𝐂𝐎𝐍-𝐕𝟑�`,
+            caption: `➫ 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐁𝐲 Kiyotaka�`,
             image: { url: waifudd.data.url },
           },
           { quoted: m }
@@ -10433,7 +10434,7 @@ ${listAdmin}
         }
         break;
       case "chatgpt":
-      case "gpt":
+      case "gpt2":
         {
           if (!text) return replygcXlicon("What is your question?");
           let d = await fetchJson(
@@ -11375,6 +11376,7 @@ ${listAdmin}
       case "totalfitur":
       case "totalcmd":
       case "totalcommand":
+      case "ttfr":
         replygcXlicon(`Total Features of ${botname} is ${Xliconfeature()}`);
         break;
       case "menu":
@@ -11403,7 +11405,7 @@ ${mot} 𝗠𝗼𝗱𝗲 : ${XliconBotInc.public ? "Public" : `Self`}
 ${mot} 𝗣𝗹𝘂𝗴𝗶𝗻𝘀: ${Xliconfeature()}
 ${mot} 𝗦𝗽𝗲𝗲𝗱 : ${latensie.toFixed(4)} miliseconds
 ${mot} 𝗥𝘂𝗻𝘁𝗶𝗺𝗲 : ${runtime(process.uptime())}
-${mot} 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : *_SalmanSer Server_*
+${mot} 𝗛𝗼𝘀𝘁 𝗡𝗮𝗺𝗲 : *_BLACK LEGEND_*
 ${mot} 𝗣𝗹𝗮𝘁𝗳𝗼𝗿𝗺 : ${os.platform()}
 ${mot} 𝗧𝗼𝘁𝗮𝗹 𝗨𝘀𝗲𝗿 : ${Object.keys(global.db.data.users).length} User
 ${mot} 𝗧𝗼𝘁𝗮𝗹 𝗛𝗶𝘁 : ${global.db.data.settings[botNumber].totalhit} Hit
@@ -11607,7 +11609,7 @@ ${mot} 𝗗𝗮𝘁𝗲 : ${xdate}
 ┃ *ᴠᴇʀsɪᴏɴ* : 3.0.5
 ┃ *ᴍᴏᴅᴇ* : ${XliconBotInc.public ? "Public" : `Self`}
 ┃ *ᴛʏᴘᴇ sᴄʀɪᴘᴛ* : ɴᴏᴅᴇ_ᴊs
-┃ *ʜᴏsᴛ* : ᴋᴀʟɪʟɪɴᴜx
+┃ *ʜᴏsᴛ* : ERROR 404
 └⟝————ᙍᙊ
         \n${readmore}\n\n${allmenu(prefix, hituet)}`;
           if (typemenu === "v1") {
