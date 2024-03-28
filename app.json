@@ -52,11 +52,6 @@
       "required": false,
       "value": "4915212908434"
      },
-    "WELCOME_MSG": {
-      "description": "Welcome Message True/False",
-      "required": false,
-      "value": "false"
-     },
     "MENU_DESIGN": {
       "description": "Choose Any Style v1 => v8",
       "required": false,
