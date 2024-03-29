@@ -1428,8 +1428,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
     }
   }
   if (db.data.chats[m.chat].antilinkgc) {
-      if (budy.match(`chat.whatsapp.com`)) {
-        bvl = `\`\`\`「 GC Link Detected 」\`\`\`\n\n*_Admin has sent a gc link, admin is free to send any link😇_*`;
+      if (budy.match(`chat.whatsapp.com`)
         if (isAdmins) return replygcXlicon(bvl);
         if (m.key.fromMe) return replygcXlicon(bvl);
         if (XeonTheCreator) return replygcXlicon(bvl);
@@ -1443,19 +1442,12 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         });
         XliconBotInc.sendMessage(
           from,
-          {
-            text: `\`\`\`「 GC Link Detected 」\`\`\`\n\n@${
-              m.sender.split("@")[0]
-            } *_has sent a link and successfully deleted_*`,
-            contextInfo: { mentionedJid: [m.sender] },
-          },
           { quoted: m }
         );
       }
     }
     if (db.data.chats[m.chat].antilink) {
-      if (budy.match("http") && budy.match("https")) {
-        bvl = `\`\`\`「 Link Detected 」\`\`\`\n\n*_Admin has sent a link, admin is free to send any link😇_*`;
+      if (budy.match("http") && budy.match("https")
         if (isAdmins) return replygcXlicon(bvl);
         if (m.key.fromMe) return replygcXlicon(bvl);
         if (XeonTheCreator) return replygcXlicon(bvl);
@@ -1469,12 +1461,6 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         });
         XliconBotInc.sendMessage(
           from,
-          {
-            text: `\`\`\`「 Link Detected 」\`\`\`\n\n@${
-              m.sender.split("@")[0]
-            } *_has sent a link and successfully deleted_*`,
-            contextInfo: { mentionedJid: [m.sender] },
-          },
           { quoted: m }
         );
       }
