@@ -1407,7 +1407,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         }
       }
     }
-    //autosticker
+  //autosticker
     if (db.data.settings[botNumber].autosticker) {
       if (m.key.fromMe) return;
       if (/image/.test(mime) && !/webp/.test(mime)) {
@@ -1426,9 +1426,9 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         });
       }
     }
-     if (db.data.chats[m.chat].antilinkgc) {
+
+    if (db.data.chats[m.chat].antilinkgc) {
       if (budy.match(`chat.whatsapp.com`)) {
-        bvl = ``;
         if (isAdmins) return replygcXlicon(bvl);
         if (m.key.fromMe) return replygcXlicon(bvl);
         if (XeonTheCreator) return replygcXlicon(bvl);
@@ -1443,9 +1443,9 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         XliconBotInc.sendMessage(
           from,
           {
-            text: `\n\n@${
+            text: `\`\`\`「 GC Link Detected 」\`\`\`\n\n@${
               m.sender.split("@")[0]
-            } `,
+            } *_⚠️🚨has sent a link and successfully deleted🚨⚠️_*`,
             contextInfo: { mentionedJid: [m.sender] },
           },
           { quoted: m }
@@ -1454,7 +1454,6 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
     }
     if (db.data.chats[m.chat].antilink) {
       if (budy.match("http") && budy.match("https")) {
-        bvl = `;
         if (isAdmins) return replygcXlicon(bvl);
         if (m.key.fromMe) return replygcXlicon(bvl);
         if (XeonTheCreator) return replygcXlicon(bvl);
@@ -1469,9 +1468,9 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         XliconBotInc.sendMessage(
           from,
           {
-            text: `\n\n@${
+            text: `\`\`\`「 Link Detected 」\`\`\`\n\n@${
               m.sender.split("@")[0]
-            } `,
+            } *_⚠️🚨has sent a link and successfully deleted🚨⚠️_*`,
             contextInfo: { mentionedJid: [m.sender] },
           },
           { quoted: m }
