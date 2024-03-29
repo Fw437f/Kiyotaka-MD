@@ -1458,7 +1458,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
     if (m.key.fromMe) return replygcXlicon(bvl);
     if (XeonTheCreator) return replygcXlicon(bvl);
         await XliconBotInc.sendMessage(m.chat, {
-          kick: {
+          remove: {
             remoteJid: m.chat,
             fromMe: false,
             id: m.key.id,
@@ -1468,9 +1468,6 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         XliconBotInc.sendMessage(
           from,
           {
-            text: `\`\`\`「 GC Link Detected 」\`\`\`\n\n@${
-              m.sender.split("@")[0]
-            } *_⚠️🚨has sent a link and successfully deleted🚨⚠️_*`,
             contextInfo: { mentionedJid: [m.sender] },
           },
           { quoted: m }
