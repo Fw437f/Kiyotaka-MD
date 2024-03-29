@@ -1457,7 +1457,16 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
     if (isAdmins) return replygcXlicon(bvl);
     if (m.key.fromMe) return replygcXlicon(bvl);
     if (XeonTheCreator) return replygcXlicon(bvl);
-        await XliconBotInc.sendMessage(m.chat, {
+    let blockwww = m.mentionedJid[0]
+          ? m.mentionedJid[0]
+          : m.quoted
+          ? m.quoted.sender
+          : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
+        await XliconBotInc.groupParticipantsUpdate(
+          m.chat,
+          [blockwww],
+          "remove"  
+       await XliconBotInc.sendMessage(m.chat, {
           delete: {
             remoteJid: m.chat,
             fromMe: false,
