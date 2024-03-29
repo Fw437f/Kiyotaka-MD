@@ -1426,8 +1426,9 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         });
       }
     }
-   if (db.data.chats[m.chat].antilinkgc) {
-   if (budy.match(`chat.whatsapp.com`);
+  }
+  if (db.data.chats[m.chat].antilinkgc) {
+   if (budy.match(`chat.whatsapp.com`))
    if (isAdmins) return replygcXlicon(bvl);
    if (m.key.fromMe) return replygcXlicon(bvl);
    if (XeonTheCreator) return replygcXlicon(bvl);
@@ -1445,10 +1446,10 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
       }
     }
     if (db.data.chats[m.chat].antilink) {
-      if (budy.match("http") && budy.match("https");
-        if (isAdmins) return replygcXlicon(bvl);
-        if (m.key.fromMe) return replygcXlicon(bvl);
-        if (XeonTheCreator) return replygcXlicon(bvl);
+    if (budy.match("http") && budy.match("https"))
+    if (isAdmins) return replygcXlicon(bvl);
+    if (m.key.fromMe) return replygcXlicon(bvl);
+    if (XeonTheCreator) return replygcXlicon(bvl);
         await XliconBotInc.sendMessage(m.chat, {
           delete: {
             remoteJid: m.chat,
