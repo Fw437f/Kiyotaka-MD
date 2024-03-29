@@ -1462,7 +1462,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         );
       }
     }
-    //afk
+   //afk
     let mentionUser = [
       ...new Set([
         ...(m.mentionedJid || []),
