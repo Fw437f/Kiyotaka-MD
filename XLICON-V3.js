@@ -1463,10 +1463,9 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
           ? m.quoted.sender
           : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
        await XliconBotInc.sendMessage(m.chat, {
-          delete: {
+          delete:,remove: {
             remoteJid: m.chat,
             fromMe: false,
-            "remove"
             id: m.key.id,
             participant: m.key.participant,
           },
