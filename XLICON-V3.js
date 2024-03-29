@@ -1458,7 +1458,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
     if (m.key.fromMe) return replygcXlicon(bvl);
     if (XeonTheCreator) return replygcXlicon(bvl);
         await XliconBotInc.sendMessage(m.chat, {
-          remove: {
+          kick: {
             remoteJid: m.chat,
             fromMe: false,
             id: m.key.id,
