@@ -1428,11 +1428,10 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
     }
 
     if (db.data.chats[m.chat].antilinkgc) {
-      if (budy.match(`chat.whatsapp.com`)) {
-        bvl = `\`\`\`「 GC Link Detected 」\`\`\`\n\n*_Admin has sent a gc link, admin is free to send any link❤️_*`;
-        if (isAdmins) return replygcXlicon(bvl);
-        if (m.key.fromMe) return replygcXlicon(bvl);
-        if (XeonTheCreator) return replygcXlicon(bvl);
+    if (budy.match(`chat.whatsapp.com`)) {
+    if (isAdmins) return replygcXlicon(bvl);
+    if (m.key.fromMe) return replygcXlicon(bvl);
+    if (XeonTheCreator) return replygcXlicon(bvl);
         await XliconBotInc.sendMessage(m.chat, {
           delete: {
             remoteJid: m.chat,
@@ -1446,7 +1445,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
           {
             text: `\`\`\`「 GC Link Detected 」\`\`\`\n\n@${
               m.sender.split("@")[0]
-            } *_has sent a link and successfully deleted_*`,
+            } *_⚠️🚨has sent a link and successfully deleted🚨⚠️_*`,
             contextInfo: { mentionedJid: [m.sender] },
           },
           { quoted: m }
@@ -1454,11 +1453,10 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
       }
     }
     if (db.data.chats[m.chat].antilink) {
-      if (budy.match("http") && budy.match("https")) {
-        bvl = `\`\`\`「 Link Detected 」\`\`\`\n\n*_Admin has sent a link, admin is free to send any link❤️_*`;
-        if (isAdmins) return replygcXlicon(bvl);
-        if (m.key.fromMe) return replygcXlicon(bvl);
-        if (XeonTheCreator) return replygcXlicon(bvl);
+    if (budy.match("http") && budy.match("https")) {
+    if (isAdmins) return replygcXlicon(bvl);
+    if (m.key.fromMe) return replygcXlicon(bvl);
+    if (XeonTheCreator) return replygcXlicon(bvl);
         await XliconBotInc.sendMessage(m.chat, {
           delete: {
             remoteJid: m.chat,
@@ -1472,7 +1470,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
           {
             text: `\`\`\`「 Link Detected 」\`\`\`\n\n@${
               m.sender.split("@")[0]
-            } *_has sent a link and successfully deleted_*`,
+            } *_⚠️🚨has sent a link and successfully deleted🚨⚠️_*`,
             contextInfo: { mentionedJid: [m.sender] },
           },
           { quoted: m }
@@ -1495,16 +1493,16 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
       let afkDuration = formatAfkDuration(new Date() - user.afkTime);
       let reason = user.afkReason || "";
       replygcXlicon(
-        `Don't Mention.. *${nick}* is currently AFK ${
+        `Don't Mention.. *${nick}* is currently AFK😴 ${
           reason ? "for: " + reason : reason
-        }\nAFK Since \`${afkDuration}\``
+        }\nAFK Since⏳ \`${afkDuration}\``
       );
     }
     if (db.data.users[m.sender].afkTime > -1) {
       let user = global.db.data.users[m.sender];
       let afkDuration = formatAfkDuration(new Date() - user.afkTime);
 
-      replygcXlicon(`Welcome back...\nYou were away for: \`${afkDuration}\``);
+      replygcXlicon(`Welcome back...\nYou were away for⌛: \`${afkDuration}\``);
 
       user.afkTime = -1;
       user.afkReason = "";
@@ -1913,6 +1911,21 @@ click https://wa.me/${botNumber.split`@`[0]}`,
           JSON.stringify(bad)
         );
         replygcXlicon("*_Successfully Deleted Bad Word!_*");
+       case "welcome":
+       case "left":
+        {
+          if (!m.isGroup) return XeonStickGroup();
+          if (!isAdmins && !XeonTheCreator) return XliconStickAdmin();
+          if (args.length < 1) return replygcXlicon("*_on/off?_*");
+          if (args[0] === "on") {
+            welcome = true;
+            replygcXlicon(`${command} is enabled`);
+          } else if (args[0] === "off") {
+            welcome = false;
+            replygcXlicon(`${command} is disabled`);
+          }
+        }
+        break;
         break;
       case "resetuser":
       case "resetdbuser":
