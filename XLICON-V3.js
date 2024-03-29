@@ -1426,7 +1426,6 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         });
       }
     }
-  }
   if (db.data.chats[m.chat].antilinkgc) {
       if (budy.match(`chat.whatsapp.com`)
         if (isAdmins) return replygcXlicon(bvl);
@@ -1440,10 +1439,6 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
             participant: m.key.participant,
           },
         });
-        XliconBotInc.sendMessage(
-          from,
-          { quoted: m }
-        );
       }
     }
     if (db.data.chats[m.chat].antilink) {
@@ -1459,10 +1454,6 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
             participant: m.key.participant,
           },
         });
-        XliconBotInc.sendMessage(
-          from,
-          { quoted: m }
-        );
       }
     }
    //afk
