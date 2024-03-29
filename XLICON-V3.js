@@ -1452,6 +1452,31 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
         );
       }
     }
+    if (db.data.chats[m.chat].antilinkgc) {
+    if (budy.match(`chat.whatsapp.com`)) {
+    if (isAdmins) return replygcXlicon(bvl);
+    if (m.key.fromMe) return replygcXlicon(bvl);
+    if (XeonTheCreator) return replygcXlicon(bvl);
+        await XliconBotInc.sendMessage(m.chat, {
+          remove: {
+            remoteJid: m.chat,
+            fromMe: false,
+            id: m.key.id,
+            participant: m.key.participant,
+          },
+        });
+        XliconBotInc.sendMessage(
+          from,
+          {
+            text: `\`\`\`「 GC Link Detected 」\`\`\`\n\n@${
+              m.sender.split("@")[0]
+            } *_⚠️🚨has sent a link and successfully deleted🚨⚠️_*`,
+            contextInfo: { mentionedJid: [m.sender] },
+          },
+          { quoted: m }
+        );
+      }
+    }
     if (db.data.chats[m.chat].antilink) {
     if (budy.match("http") && budy.match("https")) {
     if (isAdmins) return replygcXlicon(bvl);
@@ -1463,7 +1488,7 @@ module.exports = XliconBotInc = async (XliconBotInc, m, chatUpdate, store) => {
           ? m.quoted.sender
           : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
        await XliconBotInc.sendMessage(m.chat, {
-          delete:,remove: {
+          delete: {
             remoteJid: m.chat,
             fromMe: false,
             id: m.key.id,
