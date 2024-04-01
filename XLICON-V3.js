@@ -4276,7 +4276,6 @@ ${cpus
         }
         break;
       //convert
-      case "s":
       case "sticker":
       case "stiker":
         {
@@ -4315,7 +4314,7 @@ ${cpus
           }
         }
         break;
-      case "swm":
+      case "s":
       case "steal":
       case "stickerwm":
       case "take":
